@@ -1,0 +1,253 @@
+# Site settings
+baseurl = "https://rudderandoar.github.io/"
+languageCode = "en-us"
+title = "Rudder and Oar"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Your name"
+  description = "Your description"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+
+  # Navigation
+  [params.navigation]
+    brand = "Rudder and Oar"
+    # Optional logo as brand stored in img/
+    logo = "logo.png"
+    services = "Services"
+    portfolio = "Portfolio"
+    about = "About"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Rudder + Oar"
+    subtitle = "Hand Lettered Goods to Delight + Inspire"
+    # buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    subtitle = ""
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-bag"
+      title = "Shop"
+      description = "We have a wide variety of projects available for sale on Etsy. Browse Rudder and Oar products in our online shop!"
+      url = "https://www.etsy.com/shop/rudderandoar"
+
+    [[params.services.row.list]]
+      icon = "fa-calendar"
+      title = "Events"
+      description = "Use words to make your event beautiful and memorable. Wedding signs or vows, invitation or announcement calligraphy, seating charts and menus are a few examples that I look forward to lettering for your special occasion."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-paint-brush"
+      title = "Custom Projects"
+      description = "From creative projects like penning quotes to capturing memories from a vacation, get in touch with your idea and let’s get creating."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "From print to packaging, everything is created with intention and love."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "About"
+    subtitle = ""
+    endpoint = "Let's Collaborate"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      # date = "2009-2011"
+      title = "Rudder and Oar"
+      description = "Rudder and Oar has grown out of a love of letter writing, paper goods and the power of words. Words have the ability to 'rudder' us in one direction or another and can give us the forward momentum needed to move, like an ‘oar’ in the water."
+
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    center = true
+    title = "About me"
+    subtitle = "I'm Jen Thomas, a West Michigan native living in Boston, and loving New England. I am also the calligrapher here at Rudder and Oar."
+    description = ""
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "jenforweb.jpg"
+      name = "Jen Thomas"
+      position = "Calligrapher + Owner"
+      #reportsTo = "CTO"
+      #livesIn = "[Munich, Germany](#some-maps-url)"
+      #scope = []
+      # For bio markdown and even multiline strings are available.
+      bio = """### Favorite things:
+* Waking up in a tent
+* Water (especially Lake Michigan) and trees
+* Paddling (from the BACK of the canoe)
+* New Adventures (see below)
+* ALL the chips and salsa
+* Morning coffee
+* Library dates
+### Current Adventures:
+
+* Boat Restoration Project
+* Hike the 48 peaks over 4,000 ft in the NH White Mountains
+"""
+      #social = [["fa-twitter", "#"]]
+
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "We'd love to hear from you."
+    buttonText = "Send message"
+
+    email = "rudderandoar@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    thanks = "Your message has been sent! We'll get back to you as soon as we possibly can."
+    error = "Oops! For some reason your message didn't send. Please contact us at rudderandoar@gmail.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Made with love in Boston"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/rudderandoar/"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-etsy"
+      link = "https://www.etsy.com/shop/rudderandoar"
+      title = "Etsy"
+
+    # [[params.footer.quicklinks]]
+    #  text = "Privacy Policy"
+    #  link = "#"
+
+    # [[params.footer.quicklinks]]
+    #  text = "Terms of Use"
+    #  link = "#"
