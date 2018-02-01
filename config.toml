@@ -116,37 +116,34 @@ googleAnalytics = ""
     subtitle = ""
     endpoint = "Let's Collaborate"
 
-    # The events will be listed from the top to the bottom.
-    # All images are stored under 'static/img/about'.
-    # Replace them with your own.
+
     [[params.about.events]]
-      img = "1.jpg"
+      img = "paper_goods.jpg"
       # date = "2009-2011"
-      title = "Rudder and Oar"
+      title = "Creation"
       description = "Rudder and Oar has grown out of a love of letter writing, paper goods and the power of words. Words have the ability to 'rudder' us in one direction or another and can give us the forward momentum needed to move, like an ‘oar’ in the water."
-
-
+    [[params.about.events]]
+      img = "sunrise_beach.jpg"
+      # date = "2009-2011"
+      title = "Inspiration"
+      description = "Poignant quotes, great literature, conversations with friends or song lyrics fuel the desire to create word based art. Crashing waves, sandy beaches, dipping a paddle into calm lake, tall evergreens, moss covered paths, falling snow and the stillness of a dense forest also serve as inspiration and can be seen weaved into projects."
+    [[params.about.events]]
+      img = "change_world.jpg"
+      # date = "2009-2011"
+      title = "Your Project"
+      description = "Let's make all your word dreams come true. Contact me with your special event, words or crazy design ideas and let's get creating. "
 
   # Team section
   [params.team]
     enable = true
-    # Possibility to center items
     center = true
-    title = "About me"
-    subtitle = "I'm Jen Thomas, a West Michigan native living in Boston, and loving New England. I am also the calligrapher here at Rudder and Oar."
+    title = "Hello!"
+    subtitle = """I'm Jen Thomas. A West Michigan native living in Boston after a few other stops along the way. I'm the owner and calligrapher here at Rudder and Oar and love all things water, woods and paper goods."""
     description = ""
 
-    # All team member's pictures are stored under 'static/img/team'.
-    # Replace them with your own too.
-    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
       img = "jenforweb.jpg"
       name = "Jen Thomas"
-      position = "Calligrapher + Owner"
-      #reportsTo = "CTO"
-      #livesIn = "[Munich, Germany](#some-maps-url)"
-      #scope = []
-      # For bio markdown and even multiline strings are available.
       bio = """### Favorite things:
 * Waking up in a tent
 * Water (especially Lake Michigan) and trees

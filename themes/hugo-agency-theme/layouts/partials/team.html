@@ -13,7 +13,7 @@
           <div class="team-member">
             {{ $url := printf "img/team/%s" .img }}
             <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
-            <h3>{{ .name | markdownify }}</h3>
+            <!-- <h3>{{ .name | markdownify }}</h3> -->
 
             {{ with .position }}
             <h4>{{ . | markdownify }}</h4>
