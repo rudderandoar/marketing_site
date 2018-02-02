@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://rudderandoar.com/"
+BaseURL = "https://rudderandoar.com"
 languageCode = "en-us"
 title = "Rudder and Oar"
 theme = "hugo-agency-theme"
