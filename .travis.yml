@@ -9,6 +9,7 @@ install:
 # Build the website
 script:
   - binaries/hugo --theme hugo-agency-theme
+  - mv CNAME public/
   - mv robots.txt public/
 
 # Deploy to GitHub pages
